@@ -1,0 +1,63 @@
+<svg id="background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350" height="100" viewBox="0 0 350 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2e2e2e;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #333;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        mask: url(#mask);
+      }
+
+      .cls-5 {
+        opacity: 0.75;
+      }
+
+      .cls-6 {
+        fill: #232323;
+      }
+
+      .cls-7 {
+        filter: url(#luminosity-invert);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="4.52" y1="49.67" x2="346.48" y2="49.67" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6ec200"/>
+      <stop offset="0.51" stop-color="#93ff00"/>
+      <stop offset="0.99" stop-color="#cf0"/>
+    </linearGradient>
+    <filter id="luminosity-invert" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feColorMatrix values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask" x="2" y="16" width="347" height="67" maskUnits="userSpaceOnUse">
+      <g class="cls-7">
+        <image width="347" height="67" transform="translate(2 16)" xlink:href="progress%20bar1.png"/>
+      </g>
+    </mask>
+  </defs>
+  <g>
+    <rect class="cls-1" x="0.5" y="17" width="350" height="62.66" rx="31.33"/>
+    <rect class="cls-2" x="0.5" y="17" width="350" height="62.66" rx="31.33"/>
+    <g>
+      <rect class="cls-3" x="4.52" y="18.34" width="341.96" height="62.66" rx="31.33"/>
+      <g class="cls-4">
+        <g class="cls-5">
+          <rect class="cls-6" x="4.52" y="18.34" width="341.96" height="62.66" rx="31.33"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

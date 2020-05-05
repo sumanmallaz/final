@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="135" height="135" viewBox="0 0 135 135">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-4 {
+        fill: #213e96;
+      }
+
+      .cls-1, .cls-10, .cls-11, .cls-8, .cls-9 {
+        stroke: #231f20;
+      }
+
+      .cls-1, .cls-10, .cls-11, .cls-3, .cls-8, .cls-9 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        stroke: url(#linear-gradient);
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-6 {
+        opacity: 0.5;
+        mix-blend-mode: multiply;
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-8 {
+        fill: none;
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-10 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-11 {
+        fill: #ebe6e6;
+        stroke-width: 8px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="101.43" y1="-2754.63" x2="107.11" y2="-2754.63" gradientTransform="matrix(0.56, 0.83, -0.81, 0.55, -2208.97, 1572.1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5c53a2"/>
+      <stop offset="0.72" stop-color="#0c1329"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <ellipse class="cls-1" cx="59.66" cy="82.76" rx="48.15" ry="44.11"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="-65.43" y1="29.34" x2="117.96" y2="159.02" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#223f99"/>
+      <stop offset="1" stop-color="#213e96"/>
+      <stop offset="1" stop-color="#191d63"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="72.18" y1="41.16" x2="109.66" y2="41.16" gradientTransform="translate(82.04 -58.25) rotate(60.54)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#223f99"/>
+      <stop offset="1" stop-color="#262261"/>
+      <stop offset="1" stop-color="#191d63"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="62.21" y1="50.05" x2="108.96" y2="50.05" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#linear-gradient-3"/>
+  </defs>
+  <g class="cls-2">
+    <g id="background">
+      <g>
+        <line class="cls-1" x1="81.24" y1="118.69" x2="81.69" y2="118.11"/>
+        <path class="cls-3" d="M83.19,135.37a4.37,4.37,0,0,1-2.24,0c.12-1,.22-1.93.29-2.9Z"/>
+        <g>
+          <ellipse class="cls-4" cx="59.66" cy="82.76" rx="48.15" ry="44.11"/>
+          <g class="cls-5">
+            <g class="cls-6">
+              <path class="cls-7" d="M114.89,85.73l-10.47,69.36c-10.48,69.37,0,0-39.08,18.75S58.83,173-35.14,83.5s0,0,71.4-48.71c21.33-14.55-10.2,47.42,11.51,61.48S99.53,105.62,114.89,85.73Z"/>
+              <path class="cls-8" d="M114.89,85.73l-10.47,69.36c-10.48,69.37,0,0-39.08,18.75S58.83,173-35.14,83.5s0,0,71.4-48.71c21.33-14.55-10.2,47.42,11.51,61.48S99.53,105.62,114.89,85.73Z"/>
+            </g>
+          </g>
+          <ellipse class="cls-8" cx="59.66" cy="82.76" rx="48.15" ry="44.11"/>
+        </g>
+        <g>
+          <ellipse class="cls-9" cx="90.92" cy="41.16" rx="13.11" ry="20.21" transform="translate(10.36 100.08) rotate(-60.54)"/>
+          <path class="cls-10" d="M74,30.21l33.84,21.91,1.12.73L98.33,66.63,97,68.32c-2.6,3.37-12.35,1.15-21.79-5s-15-13.8-12.38-17.17"/>
+        </g>
+        <path class="cls-11" d="M90.92,41.17c14.52-12.79,1.43-13.9,14.52-12.79S115.09,8.5,115.09,8.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

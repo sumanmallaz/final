@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="119" viewBox="0 0 375 119">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        font-size: 67.22px;
+        font-family: BritannicBold, Britannic Bold;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" y1="59.5" x2="369.47" y2="59.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f7931e"/>
+      <stop offset="0.27" stop-color="#f46b20"/>
+      <stop offset="0.59" stop-color="#f04022"/>
+      <stop offset="0.85" stop-color="#ee2624"/>
+      <stop offset="1" stop-color="#ed1c24"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer_6" data-name="Layer 6">
+    <g>
+      <rect class="cls-1" x="0.5" y="0.5" width="374" height="118" rx="57.71"/>
+      <text class="cls-2" transform="matrix(1.04, 0, 0, 1, 60.19, 77.83)">Settings</text>
+    </g>
+  </g>
+</svg>
