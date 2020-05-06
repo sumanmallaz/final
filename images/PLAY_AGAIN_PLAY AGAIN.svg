@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="467.96" height="168.82" viewBox="0 0 467.96 168.82">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        mask: url(#mask);
+      }
+
+      .cls-3 {
+        opacity: 0.75;
+      }
+
+      .cls-4 {
+        fill: #232323;
+      }
+
+      .cls-5 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-6 {
+        font-size: 155.81px;
+        font-family: BritannicBold, Britannic Bold;
+      }
+
+      .cls-7 {
+        filter: url(#luminosity-invert);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="455.55" cy="66.49" r="325.35" gradientTransform="translate(0 -0.33) scale(0.51 1.18)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.03" stop-color="#ff9100"/>
+      <stop offset="1" stop-color="#ff2f00"/>
+    </radialGradient>
+    <filter id="luminosity-invert" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feColorMatrix values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask" x="-2.08" y="-0.24" width="466" height="158" maskUnits="userSpaceOnUse">
+      <g class="cls-7">
+        <image width="466" height="158" transform="translate(-2.08 -0.24)" xlink:href="PLAY_AGAIN1.png"/>
+      </g>
+    </mask>
+    <radialGradient id="radial-gradient-2" cx="462.32" cy="66.49" r="330.08" xlink:href="#radial-gradient"/>
+  </defs>
+  <g id="Layer_3" data-name="Layer 3">
+    <g>
+      <g>
+        <g>
+          <rect class="cls-1" y="1.81" width="461.11" height="153.19" rx="64.68"/>
+          <g class="cls-2">
+            <g class="cls-3">
+              <rect class="cls-4" y="1.81" width="461.11" height="153.19" rx="64.68"/>
+            </g>
+          </g>
+        </g>
+        <rect class="cls-5" y="2.01" width="467.96" height="152.78" rx="64.5"/>
+      </g>
+      <text class="cls-6" transform="translate(82.26 129.86) scale(0.38 1)">PLAY AGAIN</text>
+    </g>
+  </g>
+</svg>

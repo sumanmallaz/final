@@ -75,65 +75,92 @@ body {
     z-index: 20;
     height: 10vw;
     width: 15vw;
-    top: 36vw;
-    left: 60vw;
+    top: 32vw;
+    left: 43vw;
 }
 
-/*
+#gamecomplete_screen {
+	background-image: url(images/win_WIN.svg);
+   background-size: 100%;
+    position: absolute;
+    z-index: 20;
+    height: 56.25vw;
+    width: 100vw;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+
+}
+
+.play_again {
+    background-image: url(images/PLAY_AGAIN_PLAY%20AGAIN.svg);
+     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 20;
+    height: 10vw;
+    width: 15vw;
+    top: 42vw;
+    left: 43vw;
+
+}
+
+
 #settingsScreen {
-    position: absolute;
-    height: 46vw;
-    width: 80vw;
-    left: 20vw;
-    top:6vw;
-    background-image: url(images/start1_setting_screen.svg);
+     background-image: url(images/setting_settings_SETTINGS.svg);
     background-size: 100%;
-    background-repeat: no-repeat;
-    visibility: hidden;
+    position: absolute;
+    height: 40vw;
+    width: 43vw;
+    top: 3vw;
+    left: 30vw;
+    overflow: hidden;
+    z-index: 21;
+	visibility: hidden;
 }
 
-#setting_button {
-    position: absolute;
-    height: 8vw;
-    width: 8vw;
-    top: 6vw;
-    left: 85vw;
-    z-index: 4;
-    background-image: url(images/setting_settings.svg);
-    background-size: 100%;
+#settings_Button {
+   background-image: url(images/setting_settings.svg);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    position: absolute;
+    height: 6vw;
+    width: 9vw;
+    top: 42vw;
+    left: 3vw;
     cursor: pointer;
+
 }
-
-
 #sound_button{
     position: absolute;
-    width: 20vw;
+    width: 10vw;
     height: 10vw;
-    left: 20vw;
-    top:20vw;
+    left: 18vw;
+    top:16vw;
     background-image: url(images/sound_sound.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     cursor: pointer;
 
 }
+
+
+
 #musicFX{
     position: absolute;
+	 width: 20vw;
+    height: 10vw;
     top: 24vw;
     left:35vw;
     background-color: antiquewhite;
     cursor: pointer
 }
-*/
-
-/*
 .mute_button{
     position: absolute;
     width: 20vw;
     height: 10vw;
- left: 20vw;
-    top: 20vw;
+ left: 19vw;
+    top: 17vw;
     background-image: url(images/mute_mute%20button.svg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -143,32 +170,16 @@ body {
 
 #close_button{
   position: absolute;
-    width: 10vw;
-    height: 9vw;
- left: 52vw;
-    top: 4vw;
+    width: 4vw;
+    height: 8vw;
+    left: 37vw;
+    top: 2vw;
     background-image: url(images/sound_close%20button.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
-
-
-#volume_slider {
-    position: absolute;
-    top:  40vw;
-    left: 20vw;
-    width: 30vw;
-}
-.myslider{
-    position: absolute;
-     top:30vw;
-    left:27vw;
-    width: 30vw;
-    height:2vw;
-}
-*/
 
 #ui_container {
     top: 0vw;
@@ -197,26 +208,27 @@ body {
     width: 20vw;
     position: absolute;
     justify-content: flex-end;
-    top: 6vw;
-    left: 80vw;
+    top: 7vw;
+    left: 86vw;
 }
 
 #heart{
     display: flex;
 }
-.active_life {
+.active_heart {
     width: 3vw;
     height: 3vw;
-    background-image: url(images/life_red%20heart.svg);
+    background-image: url(images/life_active_heart.svg);
     background-size: 100%;
+	display: inline-block;
 }
 
-.broken_life {
+.broken_heart {
     width: 3vw;
     height: 3vw;
-    background-image: url(images/life_grey%20heart.svg);
+    background-image: url(images/life_broken%20heart.svg);
     background-size: 100%;
-
+	display: inline-block;
 }
 #game_elements {
     position: absolute;
@@ -406,11 +418,11 @@ animation-delay: .6s;
     }
 }
 
-#pause_button {
+/*#pause_button {
     position: absolute;
     top: 47vw;
     left: 10vw;
-}
+}*/
 
 
 .pulse {
@@ -560,7 +572,6 @@ animation-delay: .6s;
     }
 }
 
-
 .explode {
     animation-name: explode_kf;
     animation-duration: 1s;
@@ -579,41 +590,39 @@ animation-delay: .6s;
         transform: scale(0);
     }
 }
+#time_board{
+    position: relative;
+     left: 85vw;
+    top: 2vw;
+     width: 15vw;
+    height: 3vw;
+    overflow: hidden;
+}
 
-#time_container {
-    background-image: url(images/barF_red%20heart.svg);
+#time_board .sprite1{
+    background-image: url(images/life_sprite1_bar.svg);
     background-size: 100%;
     position: absolute;
-    width: 20vw;
-    height: 2.75vw;
-    left: 78vw;
-    top: 2vw;
-    z-index: 4;
-}
-#time_sprite {
-    background-color: lightcyan
-    border-radius: .5vw;
-    margin-top: 1vw;
-    margin-left: 1vw;
-    background-size: 100%;
-    width: 19vw;
+    width: 12vw;
     height: 2vw;
 
-    transform-origin: left top;
-    left: 78vw;
-    top: 2vw;
-    z-index: 5;
 }
-#progress_container {
+#time_board .sprite2 {
+    background-image: url(images/life_sprite2_bar.svg);
     position: absolute;
-    top: 3vw;
-    left: 1vw;
-    z-index: 10;
+    background-size: 100%;
+    width: 12vw;
+    height: 2vw;
+	align-items: center;
+    overflow: hidden;
 }
 
-.bar {
-    width: 20vw;
-    height: 5vw;
+#time_left {
+    position: absolute;
+    font-size: 3vw;
+    color: white;
+    left: 20vw;
+    top: 4.5vw
 }
 
 
@@ -628,6 +637,23 @@ animation-delay: .6s;
 
 }
 
+.timeend {
+    animation-name: timeend_kf;
+    animation-duration: 20s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@keyframes timeend_kf {
+    0% {
+        transform: translate(0vw);
+        overflow: hidden;
+    }
+    100%{
+        transform: translate(-12vw);
+        overflow: hidden;
+    }
+
+}
 
 
 
@@ -661,4 +687,4 @@ position5 {
     animation-duration: 1.5s;
 }
 
-}
+

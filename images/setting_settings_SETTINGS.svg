@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1201.44" height="1111.44" viewBox="0 0 1201.44 1111.44">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2, .cls-5 {
+        opacity: 0.75;
+      }
+
+      .cls-2 {
+        mix-blend-mode: screen;
+      }
+
+      .cls-3 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #231f20;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-5 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-6 {
+        font-size: 234.71px;
+        font-family: BritannicBold, Britannic Bold;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="1006.77" cy="555.72" fx="2044.6186591497797" fy="1414.9356534295548" r="1347.36" gradientTransform="translate(-12.99) scale(0.61 1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f15a29"/>
+      <stop offset="0.54" stop-color="#f0513e"/>
+      <stop offset="1" stop-color="#ef4753"/>
+    </radialGradient>
+  </defs>
+  <g class="cls-1">
+    <g id="Layer_1" data-name="Layer 1">
+      <g>
+        <image class="cls-2" width="5006" height="4631" transform="scale(0.24)" xlink:href="setting_settings1.png"/>
+        <g>
+          <rect class="cls-3" x="15.52" y="15.72" width="1170.38" height="1080" rx="161.13"/>
+          <rect class="cls-4" x="15.52" y="15.72" width="1170.38" height="1080" rx="161.13"/>
+        </g>
+      </g>
+    </g>
+    <g id="Layer_2" data-name="Layer 2">
+      <g>
+        <image class="cls-5" width="2973" height="1185" transform="translate(234.24 69.84) scale(0.24)" xlink:href="setting_settings2.png"/>
+        <text class="cls-6" transform="translate(242.25 273.53) scale(0.69 1)">SETTINGS</text>
+      </g>
+    </g>
+  </g>
+</svg>

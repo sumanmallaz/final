@@ -37,10 +37,11 @@
     <div id="bomb">
         <div class="sprite"></div>
     </div>
+       <div id="bomb1">
+        <div class="sprite"></div>
         </div>
 
-    <div id="bomb1">
-        <div class="sprite"></div>
+
     </div>
     <div id="game_ui">
         <audio id="characterFX" src="sounds/monster_s.wav"></audio>
@@ -51,46 +52,45 @@
             <span id="current_points">points 0</span>
 
         </div>
-        <div id="time_board">
-            <div id="time_container">
-                <div id="time_sprite" class="shrink"></div>
-            </div>
+       <div id="time_board">
+
+                    <div class="sprite1"></div>
+                    <div class="sprite2"></div>
+
+
+                </div>
+
             <div id="energy_board">
-                <div id="heart_1" class="active_life"></div>
-                <div id="heart_2" class="active_life"></div>
-                <div id="heart_3" class="active_life"></div>
-
-                <!--  <div id="heart_1" >❤️</div>
-                <div id="heart_2">❤️</div>
-                <div id="heart_3">❤️</div>
-                      -->
+                <div id="heart_1" class="active_heart"></div>
+                <div id="heart_2" class="active_heart"></div>
+                <div id="heart_3" class="active_heart"></div>
             </div>
-            <button id="pause_button">Pause</button>
-
+           <!-- <button id="pause_button">Pause</button>-->
+            <div id="settings_Button"></div>
         </div>
-    </div>
     <div id="start">
         <div id="start_screen">
             <div class="start_button"></div>
         </div>
     </div>
 
+    <div id="levelcomplete" >
+        <div id="gamecomplete_screen"></div>
+         <div class="play_again"></div>
+            <div class="show_score">SCORE:</div>
+            <div id="display_score_gamecomplete"></div>
+        </div>
+
     <div id="gameover" class="hide">
         <div id="gameover_screen"> </div>
         <div class="tryagain_button"></div>
     </div>
 
-       <!-- <div id="settingScreen">
-            <div id="sound_button"></div>
-            <div id="exit_button"></div>
+       <div id="settingsScreen">
+            <div id="sound_button" class= "unmute_button"></div>
+            <div id="close_button"></div>
 
-            <div id="musicFX">mute Sound</div>
-            <div id="volume_Slider">
-                <input type="range" min="1" max="100" value="80" class="myslider" id="sliderInput">
-            <p>volume:<span id="volume"></span></p>
-        </div>
-
-    </div>-->
     </div>
+	</div>
     <script src="script.js"></script>
 </body></html>
