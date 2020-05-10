@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        font-size: 39.53px;
+        fill: #231f20;
+        font-family: ComicSansMS-Bold, Comic Sans MS;
+        font-weight: 700;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="638.13" cy="438.29" fx="742.2792346540566" fy="438.292682926829" r="105.2" gradientTransform="translate(12.88) scale(0.98 1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f47c20"/>
+      <stop offset="1" stop-color="#ec4324"/>
+    </radialGradient>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g>
+      <rect class="cls-1" x="453.51" y="367.56" width="317.07" height="109.76" rx="46.95"/>
+      <text class="cls-2" transform="translate(479.15 440) scale(1.14 1)">TRY AGAIN</text>
+    </g>
+  </g>
+</svg>

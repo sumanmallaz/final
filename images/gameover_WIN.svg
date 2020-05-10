@@ -1,0 +1,25 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="496.64" height="134.53" viewBox="0 0 496.64 134.53">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 124.16px;
+        fill: #ef4625;
+        font-family: CopperplateGothic-Bold, Copperplate Gothic Bold;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-3 {
+        letter-spacing: -0.04em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0.01em;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(0 103.49) scale(0.72 1)"><tspan class="cls-2">g</tspan><tspan x="87.36" y="0">ame</tspan><tspan class="cls-3" x="354.84" y="0">o</tspan><tspan class="cls-4" x="438.99" y="0">v</tspan><tspan x="521.14" y="0">er</tspan></text>
+</svg>

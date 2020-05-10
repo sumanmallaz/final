@@ -1,0 +1,38 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="235.15" height="83.93" viewBox="0 0 235.15 83.93">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        font-size: 52.92px;
+        fill: #231f20;
+        font-family: CopperplateGothic-Bold, Copperplate Gothic Bold;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        letter-spacing: 0.01em;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.06em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0.01em;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="173.67" cy="179.16" r="211.93" gradientTransform="translate(23.38 6.24) scale(0.54 0.2)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.36" stop-color="#f15929"/>
+      <stop offset="0.85" stop-color="#ef4136"/>
+    </radialGradient>
+  </defs>
+  <g>
+    <rect class="cls-1" x="0.5" y="0.5" width="234.15" height="82.93" rx="41.46"/>
+    <text class="cls-2" transform="translate(46.84 53.12) scale(0.86 1)"><tspan class="cls-3">s</tspan><tspan class="cls-4" x="33.05" y="0">t</tspan><tspan x="59.97" y="0">a</tspan><tspan class="cls-5" x="96.69" y="0">r</tspan><tspan x="133.31" y="0">t</tspan></text>
+  </g>
+</svg>

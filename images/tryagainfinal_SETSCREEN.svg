@@ -1,0 +1,42 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150.45" height="48.55" viewBox="0 0 150.45 48.55">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        font-size: 25.61px;
+        fill: #231f20;
+        font-family: CopperplateGothic-Bold, Copperplate Gothic Bold;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.07em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: -0.02em;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="162.41" cy="158.76" r="211.93" gradientTransform="translate(19 6.12) scale(0.35 0.11)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.36" stop-color="#f15929"/>
+      <stop offset="0.85" stop-color="#ef4136"/>
+    </radialGradient>
+  </defs>
+  <g>
+    <rect class="cls-1" x="0.5" y="0.5" width="149.45" height="47.55" rx="23.01"/>
+    <text class="cls-2" transform="translate(1.52 29.9) scale(1.07 1)"><tspan xml:space="preserve"> t</tspan><tspan class="cls-3" x="20.97" y="0">r</tspan><tspan class="cls-4" x="38" y="0">y</tspan><tspan class="cls-5" x="51.6" y="0">a</tspan><tspan class="cls-6" x="69.37" y="0">g</tspan><tspan class="cls-5" x="87.39" y="0">ain</tspan></text>
+  </g>
+</svg>

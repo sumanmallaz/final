@@ -1,7 +1,7 @@
 let points = 0;
 let life = 3;
 
-let gamePaused = false;
+
 
 let characterFX = document.querySelector("#characterFX");
 let scoreFX = document.querySelector("#scoreFX");
@@ -9,7 +9,7 @@ let explosionFX = document.querySelector("#explosionFX");
 let bgMusic = document.querySelector("#bgMusic");
 let muteSoundContainer = document.querySelector("#mute_sound_container");
 let muted = false;
-let soundVolume = .8;
+let soundVolume = .15;
 
 
 let timeBar = document.querySelector("#time_board");
@@ -17,7 +17,7 @@ let settingButton = document.querySelector("#settings_Button");
 let sliderInput = document.querySelector("#sliderInput");
 let volume = document.querySelector("#volume");
 
-//let settingsButton = document.querySelector("#settingsButton");
+
 
 window.addEventListener("load", userStart);
 
@@ -36,7 +36,7 @@ function userStart() {
 
 function startGame() {
 	document.querySelector("#gameover").classList.add("hide");
-	/*document.querySelector("#levelcomplete").classList.add("hide");*/
+	document.querySelector("#levelcomplete").classList.add("hide");
 	document.querySelector("#start_screen").classList.remove("hide");
 	document.querySelector(".start_button").classList.add("hide");
 
@@ -44,13 +44,11 @@ function startGame() {
 	settingButton.addEventListener("click", settings);
 	start();
 
-	//document.querySelector("#start_button").addEventListener("click", startBegin);
 }
-
 function start() {
-	 bgMusic.addEventListener("ended", playBackgroundMusic);
+	bgMusic.addEventListener("ended", playBgMusic);
 	startFalling();
-	playBackgroundMusic();
+	playBgMusic();
 	time();
 }
 
@@ -59,8 +57,7 @@ function soundMute() {
 	if (bgMusic.muted == false) {
 		bgMusic.muted = true;
 
-	}
-	else {
+	} else {
 		bgMusic.muted = false;
 		document.querySelector("#sound_button").classList.remove("soundstop");
 
@@ -83,34 +80,40 @@ function settings() {
 	document.querySelector("#coin2").classList.add("pause");
 	document.querySelector("#coin3").classList.add("pause");
 
-	 timeBar.querySelector("#time_board .sprite2").classList.add("pause");
+	timeBar.querySelector("#time_board .sprite2").classList.add("pause");
 
 	document.querySelector("#settingsScreen").style.visibility = "visible";
 
 
 	document.querySelector("#sound_button").addEventListener("click", soundMute);
 	document.querySelector("#sound_button").classList.add("pulse");
-	/*document.querySelector("#musicFX").addEventListener("click", toggleMusicFX);
-*/
-	/*document.querySelector("#musicFX").classList.add("pulse");*/
+
+	document.querySelector("#musicFX").addEventListener("click", toggleMusicFX);
+
+	document.querySelector("#musicFX").classList.add("pulse");
+
 	document.querySelector("#close_button").addEventListener("click", closeSettings);
-/*
 
-	document.querySelector("#close_button").classList.add("pulse");
-	sliderInput.addEventListener("input", slideBar);
-*/
+
+
 
 }
 
+function toggleMusicFX() {
+	console.log("toggleMusicFX");
 
-/*
-function slideBar() {
-	console.log("slider");
-	volume.innerHTML = sliderInput.value;
-	soundVolume = sliderInput.value / 100;
-	bgMusic.volume = sliderInput.value / 100;
+	if (muted == false) {
+		muted = true;
+		document.querySelector("#musicFX").classList.add("soundstop");
+
+
+	} else {
+		muted = false;
+
+		document.querySelector("#musicFX").classList.remove("soundstop");
+
+	}
 }
-*/
 
 function closeSettings() {
 	console.log("closeSettings");
@@ -135,38 +138,16 @@ function closeSettings() {
 
 }
 
-function toggleMusicFX() {
-	console.log("toggleMusicFX");
-
-	if (muted == false) {
-		muted = true;
-		 document.querySelector("#musicFX").classList.add("soundstop");
-	} else {
-		muted = false;
-		document.querySelector("#musicFX").classList.remove("soundstop");
-	}
-}
-
-function playBackgroundMusic() {
+function playBgMusic() {
 	bgMusic.play();
 	bgMusic.volume = soundVolume;
 }
 
-/*
-function muteSound() {
-	if (bgMusic.muted == false) {
-		bgMusic.muted = true;
-		muteSoundContainer.textContent = "mute";
-	} else {
-		bgMusic.muted = false;
-		muteSoundContainer.textContent = "mute";
-	}
-}
-*/
+
 
 function startFalling() {
 	console.log("start falling");
-	bgMusic.addEventListener("ended", playBackgroundMusic);
+	bgMusic.addEventListener("ended", playBgMusic);
 	// startTimer();
 	document.querySelector("#character").classList.add("falling", "position3");
 	document.querySelector("#character").classList.add("speed3");
@@ -179,6 +160,9 @@ function startFalling() {
 
 	document.querySelector("#bomb1").classList.add("falling", "position2");
 	document.querySelector("#bomb1").classList.add("speed3");
+
+	document.querySelector("#bomb2").classList.add("falling", "position4");
+	document.querySelector("#bomb2").classList.add("speed2");
 
 	document.querySelector("#coin1").classList.add("falling", "position4");
 	document.querySelector("#coin1").classList.add("speed1");
@@ -276,8 +260,6 @@ function losePoint() {
 
 }
 
-
-
 function restartCharacter() {
 	console.log("restart character");
 	let character = this;
@@ -296,8 +278,8 @@ function clickBomb() {
 	bomb.removeEventListener("click", clickBomb);
 	bomb.classList.add("pause");
 	bomb.querySelector(".sprite").classList.add("explode");
-	document.querySelector("#screen").classList.add("shake");
-    bomb.addEventListener("animationend", explode);
+	//document.querySelector("#screen").classList.add("shake");
+	bomb.addEventListener("animationend", explode);
 
 	if (!muted) {
 		explosionFX.play();
@@ -308,25 +290,27 @@ function clickBomb() {
 
 function explode() {
 	console.log("explosion");
-	loseLife();
-	document.querySelector("#screen").classList.add("shake");
-   document.querySelector("#screen").addEventListener("animationend",restartBomb);
-}
-
-function loseLife() {
 	console.log("lose a life");
 	console.log("you have a life");
 
-	document.querySelector("#heart_" + life).classList.remove("active_heart");
-	document.querySelector("#heart_"+life).classList.add("broken_heart");
+	document.querySelector("#heart_"+life).classList.remove("active_heart");
+	document.querySelector("#heart_" + life).classList.add("broken_heart");
 
 	life--;
-    console.log("you have " + life + " life left");
+	console.log("you have " + life + " life left");
+
+
+	document.querySelector("#screen").classList.add("shake");
+	document.querySelector("#screen").addEventListener("animationend", restartBomb);
+
+
 }
+
 function restartBomb() {
 	console.log("restart bomb");
-	document.querySelector("#screen").removeEventListener("animationend", restartBomb);
 	let bomb = this;
+	bomb.removeEventListener("animationend", restartBomb);
+
 	bomb.classList.remove("falling");
 	bomb.classList.offsetHeight;
 	bomb.classList.add("falling");
@@ -335,17 +319,17 @@ function restartBomb() {
 	//document.querySelector("#screen").classList.remove("shake");
 	bomb.addEventListener("click", clickBomb);
 
-	bomb.addEventListener("click", clickBomb);
+	//bomb.addEventListener("click", clickBomb);
 	if (life == 0) {
 		console.log("gameover");
 		gameOver();
-		bgMusic.removeEventListener("ended", playBackgroundMusic);
+		bgMusic.removeEventListener("ended", playBgMusic);
 	}
 
 }
 
 function reachBottom() {
-//console.log("reachBottom");
+	//console.log("reachBottom");
 	//console.log(this);
 	let element = this;
 
@@ -359,25 +343,36 @@ function reachBottom() {
 	let number = Math.floor(Math.random() * 6 + 1);
 	element.classList.add("position" + number);
 }
-
-/*function levelComplete() {
-    console.log("level complete");
-
-    document.querySelector("#character").classList.remove("falling");
-    document.querySelector("#character1").classList.remove("falling");
-    document.querySelector("#bomb").classList.remove("falling");
-    document.querySelector("#bomb1").classList.remove("falling");
-    document.querySelector("#coin1").classList.remove("falling");
-    document.querySelector("#coin2").classList.remove("falling");
-    document.querySelector("#coin3").classList.remove("falling");
-    bgMusic.addEventListener("ended", playMusic);
-}*/
-
-
 function gameOver() {
-	console.log("gameOver");
-	//  document.querySelector("#time_sprite").classList.remove("shrink");
 
+
+	console.log("gameOver");
+	timeBar.querySelector("#time_board .sprite2").classList.remove("timeend");
+
+
+	document.querySelector("#gameover_screen").classList.remove("hide");
+
+	document.querySelector(".tryagain_button").classList.add("pulse");
+	document.querySelector(".tryagain_button").addEventListener("click", restartGame);
+
+	document.querySelector(".home").classList.add("pulse");
+	document.querySelector(".home").addEventListener("click", restartTitle);
+
+	document.querySelector("#gameover").classList.remove("hide");
+	bgMusic.pause();
+}
+
+function time() {
+	console.log("time");
+	timeBar.querySelector("#time_board .sprite2").classList.add("timeend");
+
+	timeBar.addEventListener("animationend", countDownComplete);
+}
+
+function countDownComplete() {
+	console.log("countDownComplete");
+
+	timeBar.removeEventListener("animationend", countDownComplete);
 	document.querySelector("#character").classList.remove("falling");
 	document.querySelector("#character1").classList.remove("falling");
 	document.querySelector("#bomb").classList.remove("falling");
@@ -387,51 +382,25 @@ function gameOver() {
 	document.querySelector("#coin3").classList.remove("falling");
 
 	timeBar.querySelector("#time_board .sprite2").classList.remove("timeend");
+	bgMusic.removeEventListener("ended", playBgMusic);
 
-	document.querySelector("#gameover_screen").classList.remove("hide");
-	document.querySelector(".tryagain_button").classList.add("pulse");
-	document.querySelector(".tryagain_button").addEventListener("click", restartGame);
-	document.querySelector("#gameover").classList.remove("hide");
-	bgMusic.pause();
+	gameComplete();
 }
-
-function time() {
-    console.log("time");
-    timeBar.querySelector("#time_board .sprite2").classList.add("timeend");
-
-    timeBar.addEventListener("animationend", countDownComplete);
-}
-
-function countDownComplete() {
-    console.log("countDownComplete");
-
-    timeBar.removeEventListener("animationend", countDownComplete);
-    document.querySelector("#character").classList.remove("falling");
-	document.querySelector("#character1").classList.remove("falling");
-	document.querySelector("#bomb").classList.remove("falling");
-	document.querySelector("#bomb1").classList.remove("falling");
-	document.querySelector("#coin1").classList.remove("falling");
-	document.querySelector("#coin2").classList.remove("falling");
-	document.querySelector("#coin3").classList.remove("falling");
-
-    timeBar.querySelector("#time_board .sprite2").classList.remove("timeend");
-    bgMusic.removeEventListener("ended", playBackgroundMusic);
-
-    gameComplete();
-}
-
 function gameComplete() {
-    console.log("gameComplete");
+	console.log("gameComplete");
 
-    document.querySelector(".play_again").classList.add("pulse");
+	document.querySelector(".play_again").classList.add("pulse");
+	document.querySelector(".YOUWIN").classList.add("pulse");
+	document.querySelector(".play_again").addEventListener("click", restartGame);
 
-    document.querySelector(".play_again").addEventListener("click", restartGame);
+	document.querySelector(".home").classList.add("pulse");
+	document.querySelector(".home").addEventListener("click", restartTitle);
 
-    document.querySelector("#levelcomplete").classList.add("show_screen");
+	document.querySelector("#levelcomplete").classList.add("show_screen");
 
 
-    document.querySelector("#levelcomplete").classList.remove("hide");
-    bgMusic.pause();
+	document.querySelector("#levelcomplete").classList.remove("hide");
+	bgMusic.pause();
 
 
 }
@@ -443,6 +412,7 @@ function restartGame() {
 
 	document.querySelector(".tryagain_button").removeEventListener("click", restartGame);
 	document.querySelector(".play_again").removeEventListener("click", restartGame);
+	document.querySelector(".tryagain_button").removeEventListener("click", restartGame);
 
 	startFalling();
 	points = 0;
@@ -450,12 +420,37 @@ function restartGame() {
 
 	document.querySelector("#heart_1").classList.add("active_heart");
 	document.querySelector("#heart_1").classList.remove("broken_heart");
-     document.querySelector("#heart_2").classList.add("active_heart");
+	document.querySelector("#heart_2").classList.add("active_heart");
 	document.querySelector("#heart_2").classList.remove("broken_heart");
-     document.querySelector("#heart_3").classList.add("active_heart");
-	 document.querySelector("#heart_3").classList.remove("broken_heart");
+	document.querySelector("#heart_3").classList.add("active_heart");
+	document.querySelector("#heart_3").classList.remove("broken_heart");
 
 	time();
-	playBackgroundMusic();
+	playBgMusic();
+
+}
+
+function restartTitle() {
+	document.querySelector("#gameover_screen").classList.add("hide");
+	document.querySelector("#levelcomplete").classList.add("hide");
+
+	document.querySelector("#start_screen").classList.remove("hide");
+	document.querySelector(".start_button").classList.remove("hide");
+	document.querySelector(".start_button").classList.add("pulse");
+	document.querySelector(".start_button").addEventListener("click", startGame);
+
+	startFalling();
+	points = 0;
+	life = 3;
+
+	document.querySelector("#heart_1").classList.add("active_heart");
+	document.querySelector("#heart_1").classList.remove("broken_heart");
+	document.querySelector("#heart_2").classList.add("active_heart");
+	document.querySelector("#heart_2").classList.remove("broken_heart");
+	document.querySelector("#heart_3").classList.add("active_heart");
+	document.querySelector("#heart_3").classList.remove("broken_heart");
+
+	time();
+	playBgMusic();
 
 }

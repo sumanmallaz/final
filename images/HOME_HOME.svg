@@ -1,0 +1,33 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39.48" height="42.25" viewBox="0 0 39.48 42.25">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#radial-gradient-3);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="18.88" cy="-3.83" r="16.31" gradientTransform="translate(1.69 12.26) scale(0.96 0.71)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f15a29"/>
+      <stop offset="1" stop-color="#ed1c24"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="19.74" cy="25.23" r="17.54" xlink:href="#radial-gradient"/>
+    <radialGradient id="radial-gradient-3" cx="19.74" cy="33.13" r="8.68" xlink:href="#radial-gradient"/>
+  </defs>
+  <g>
+    <polygon class="cls-1" points="19.74 0.69 1.25 18.41 38.24 18.41 19.74 0.69"/>
+    <path class="cls-2" d="M38.23,19.19V41c0,.43-.61.78-1.36.78H28.92V29.58H12.2V41.75H4.26c-.77,0-1.38-.35-1.38-.78V19.19c0-.43.61-.78,1.38-.78H36.87C37.62,18.41,38.23,18.76,38.23,19.19Z"/>
+    <rect class="cls-3" x="12.2" y="29.58" width="16.72" height="12.17"/>
+  </g>
+</svg>

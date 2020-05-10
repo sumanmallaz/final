@@ -1,96 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gold Monster</title>
-    <link rel="stylesheet" href="style.css">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gold Monster</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="screen">
-        <div id="game_background"></div>
+	<div id="screen">
+		<div id="game_background"></div>
 
-    <div id="game_elements">
-            <!--    <div id="settingsButton"></div>-->
+		<div id="game_elements">
+			<!--    <div id="settingsButton"></div>-->
 
-        <div id="character">
-            <div class="sprite"></div>
-        </div>
-        <div id="character1">
-            <div class="sprite"></div>
-        </div>
-        <div id="coin">
-            <div class="sprite"></div>
-        </div>
-        <div id="coin1">
-            <div class="sprite"></div>
-        </div>
+			<div id="character">
+				<div class="sprite"></div>
+			</div>
+			<div id="character1">
+				<div class="sprite"></div>
+			</div>
+			<div id="coin">
+				<div class="sprite"></div>
+			</div>
+			<div id="coin1">
+				<div class="sprite"></div>
+			</div>
 
-    <div id="coin2">
-        <div class="sprite"></div>
-    </div>
-    <div id="coin3">
-        <div class="sprite"></div>
-    </div>
-    <div id="bomb">
-        <div class="sprite"></div>
-    </div>
-       <div id="bomb1">
-        <div class="sprite"></div>
-        </div>
+			<div id="coin2">
+				<div class="sprite"></div>
+			</div>
+			<div id="coin3">
+				<div class="sprite"></div>
+			</div>
+			<div id="bomb">
+				<div class="sprite"></div>
+			</div>
+			<div id="bomb1">
+				<div class="sprite"></div>
+			</div>
 
-
-    </div>
-    <div id="game_ui">
-        <audio id="characterFX" src="sounds/monster_s.wav"></audio>
-        <audio id="scoreFX" src="sounds/coin_s.wav"></audio>
-        <audio id="explosionFX" src="sounds/bomb_s.wav"></audio>
-        <audio id="bgMusic" src="sounds/game_s.wav"></audio>
-        <div id="score">
-            <span id="current_points">points 0</span>
-
-        </div>
-       <div id="time_board">
-
-                    <div class="sprite1"></div>
-                    <div class="sprite2"></div>
+			<div id="bomb2">
+				<div class="sprite"></div>
+			</div>
 
 
-                </div>
+		</div>
+		<div id="game_ui">
+			<audio id="characterFX" src="sounds/monster_s.wav"></audio>
+			<audio id="scoreFX" src="sounds/coin_s.wav"></audio>
+			<audio id="explosionFX" src="sounds/bomb_s.wav"></audio>
+			<audio id="bgMusic" src="sounds/game_s.wav"></audio>
+			<div id="score">
+				<span id="current_points"> 0</span>
 
-            <div id="energy_board">
-                <div id="heart_1" class="active_heart"></div>
-                <div id="heart_2" class="active_heart"></div>
-                <div id="heart_3" class="active_heart"></div>
-            </div>
-           <!-- <button id="pause_button">Pause</button>-->
-            <div id="settings_Button"></div>
-        </div>
-    <div id="start">
-        <div id="start_screen">
-            <div class="start_button"></div>
-        </div>
-    </div>
+			</div>
+			<div id="time_board">
 
-    <div id="levelcomplete" >
-        <div id="gamecomplete_screen"></div>
-         <div class="play_again"></div>
-            <div class="show_score">SCORE:</div>
-            <div id="display_score_gamecomplete"></div>
-        </div>
+				<div class="sprite1"></div>
+				<div class="sprite2"></div>
 
-    <div id="gameover" class="hide">
-        <div id="gameover_screen"> </div>
-        <div class="tryagain_button"></div>
-    </div>
 
-       <div id="settingsScreen">
-            <div id="sound_button" class= "unmute_button"></div>
-            <div id="close_button"></div>
+			</div>
 
-    </div>
+			<div id="energy_board">
+				<div id="heart">
+					<div id="heart_1" class="active_heart"></div>
+					<div id="heart_2" class="active_heart"></div>
+					<div id="heart_3" class="active_heart"></div>
+				</div>
+			</div>
+			<div id="settings_Button"></div>
+		</div>
+
+		<div id="start">
+			<div id="start_screen">
+				<div class="start_button"></div>
+			</div>
+		</div>
+
+		<div id="levelcomplete" class="hide">
+			<div id="gamecomplete_screen"></div>
+			<div class="play_again"></div>
+			<div class="YOUWIN"></div>
+			<div class="home"></div>
+
+
+		</div>
+
+		<div id="gameover" class="hide">
+			<div id="gameover_screen"> </div>
+			<div class="tryagain_button"></div>
+			<div class="gameover"></div>
+			<div class="home"></div>
+
+		</div>
+
+		<div id="settingsScreen">
+			<div id="sound_button"></div>
+			<div id="musicFX" >
+			</div>
+
+			<div id="close_button"></div>
+
+		</div>
 	</div>
-    <script src="script.js"></script>
-</body></html>
+	<script src="script.js"></script>
+</body>
+
+</html>

@@ -8,15 +8,6 @@ body {
     height: 56.25vw;
 }
 
-/*#game {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-}*/
-
 #game_background {
     position: absolute;
     top: 0;
@@ -32,7 +23,7 @@ body {
 
 
 #start_screen {
-    background-image: url(images/start1_startScreen.svg);
+    background-image: url(images/start_f1_start.svg);
     background-size: 100% 100%;
     position: absolute;
     z-index: 11;
@@ -44,7 +35,7 @@ body {
 }
 
 .start_button {
-    background-image: url(images/start_start.svg);
+    background-image: url(images/startfinal_SETSCREEN.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -57,7 +48,7 @@ body {
 }
 
 #gameover_screen {
-    background-image: url(images/GAME_GAMEOVER.svg);
+    background-image: url(images/background1.svg);
     background-size: 100%;
     position: absolute;
     z-index: 20;
@@ -67,20 +58,41 @@ body {
     top: 0;
     left: 0;
 }
-.tryagain_button {
-    background-image: url(images/GAME_TRYAGAIN.svg);
+.gameover {
+	 background-image: url(images/gameover_WIN.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
     z-index: 20;
-    height: 10vw;
-    width: 15vw;
-    top: 32vw;
-    left: 43vw;
+    height: 20vw;
+    width: 60vw;
+    top: 15vw;
+    left: 21vw;
 }
-
+.tryagain_button {
+    background-image: url(images/tryagainfinal_SETSCREEN.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 20;
+    height: 20vw;
+    width: 20vw;
+    top: 30vw;
+    left: 42vw;
+}
+.home {
+	 background-image: url(images/HOME_HOME.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 20;
+    height: 4.5vw;
+    width: 5vw;
+    top: 38vw;
+    left: 63vw;
+}
 #gamecomplete_screen {
-	background-image: url(images/win_WIN.svg);
+	background-image: url(images/background1.svg);
    background-size: 100%;
     position: absolute;
     z-index: 20;
@@ -92,26 +104,38 @@ body {
 
 }
 
+.YOUWIN{
+	 background-image: url(images/youwinfinal_WIN.svg);
+	  background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 20;
+    height: 25vw;
+    width: 35vw;
+    top: 12vw;
+    left: 35vw;
+}
+
 .play_again {
-    background-image: url(images/PLAY_AGAIN_PLAY%20AGAIN.svg);
+    background-image: url(images/playagainfinal_SETSCREEN.svg);
      background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
     z-index: 20;
-    height: 10vw;
-    width: 15vw;
-    top: 42vw;
-    left: 43vw;
+    height: 20vw;
+    width: 20vw;
+    top: 30vw;
+    left: 42vw;
 
 }
 
 
 #settingsScreen {
-     background-image: url(images/setting_settings_SETTINGS.svg);
+     background-image: url(images/settingscreenfinal_SETSCREEN.svg);
     background-size: 100%;
     position: absolute;
     height: 40vw;
-    width: 43vw;
+    width: 41vw;
     top: 3vw;
     left: 30vw;
     overflow: hidden;
@@ -120,7 +144,7 @@ body {
 }
 
 #settings_Button {
-   background-image: url(images/setting_settings.svg);
+   background-image: url(images/settingbutton%20final_SETSCREEN.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
@@ -135,7 +159,7 @@ body {
     position: absolute;
     width: 10vw;
     height: 10vw;
-    left: 18vw;
+    left: 10vw;
     top:16vw;
     background-image: url(images/sound_sound.svg);
     background-size: 100%;
@@ -147,26 +171,19 @@ body {
 
 
 #musicFX{
-    position: absolute;
-	 width: 20vw;
-    height: 10vw;
-    top: 24vw;
-    left:35vw;
-    background-color: antiquewhite;
-    cursor: pointer
-}
-.mute_button{
-    position: absolute;
-    width: 20vw;
-    height: 10vw;
- left: 19vw;
-    top: 17vw;
-    background-image: url(images/mute_mute%20button.svg);
+     position: absolute;
+    width: 11vw;
+    height: 11vw;
+    left: 25vw;
+    top:16vw;
+    background-image: url(images/musicfff_musicf.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     cursor: pointer;
 
 }
+
+
 
 #close_button{
   position: absolute;
@@ -242,7 +259,7 @@ body {
 animation-delay: .3s;
     top: 35vw;
     left: 40vw;
-    z-index: 10vw;
+    z-index: 10;
 }
 
 #character .sprite {
@@ -250,9 +267,7 @@ animation-delay: .3s;
     height: 8vw;
     top: 45vw;
     right: 35vw;
-    z-index: 10;
-
-    background-image: url(images/character.svg);
+    background-image: url(imageS/character_F_character.svg);
     background-size: 100%;
 }
 
@@ -261,7 +276,7 @@ animation-delay: .3s;
 animation-delay: .6s;
     top: 36vw;
     left: 25vw;
-    z-index: 10vw;
+    z-index: 10;
 }
 
 #character1 .sprite {
@@ -269,9 +284,7 @@ animation-delay: .6s;
     height: 8vw;
     top: 45vw;
     right: 35vw;
-    z-index: 10;
-
-    background-image: url(images/character.svg);
+    background-image: url(images/character_F_character.svg);
     background-size: 100%;
 }
 #coin1 {
@@ -279,7 +292,7 @@ animation-delay: .6s;
 animation-delay: .4s;
     top: 35vw;
     left: 50vw;
-    z-index: 10vw;
+    z-index: 10;
 }
 
 #coin1 .sprite {
@@ -287,8 +300,6 @@ animation-delay: .4s;
     height: 10vw;
     top: 30vw;
     right: 20vw;
-    z-index: 10;
-
     background-image: url(images/gold.svg);
     background-size: 100%;
 }
@@ -299,14 +310,12 @@ animation-delay: .4s;
 animation-delay: .6s;
     top: 5vw;
     left: 2vw;
-    z-index: 10vw;
+    z-index: 10;
 }
 
 #coin .sprite {
     width: 9vw;
     height: 9vw;
-    z-index: 10;
-
     background-image: url(images/gold.svg);
     background-size: 100%;
 }
@@ -316,7 +325,7 @@ animation-delay: .6s;
 animation-delay: .5s;
     top: 35vw;
     left: 50vw;
-    z-index: 10vw;
+    z-index: 10;
 }
 
 #coin1 .sprite {
@@ -324,8 +333,6 @@ animation-delay: .5s;
     height: 10vw;
     top: 45vw;
     right: 35vw;
-    z-index: 10;
-
     background-image: url(images/gold.svg);
     background-size: 100%;
 }
@@ -335,7 +342,7 @@ animation-delay: .5s;
 animation-delay: .2s;
     top: 28vw;
     left: 30vw;
-    z-index: 10vw;
+    z-index: 10;
 }
 
 #coin2 .sprite {
@@ -343,8 +350,6 @@ animation-delay: .2s;
     height: 10vw;
     top: 45vw;
     right: 35vw;
-    z-index: 10;
-
     background-image: url(images/gold.svg);
     background-size: 100%;
 }
@@ -360,7 +365,6 @@ animation-delay: .2s;
 #coin3 .sprite {
     width: 10vw;
     height: 10vw;
-
     background-image: url(images/gold.svg);
     background-size: 100%;
 }
@@ -376,7 +380,6 @@ animation-delay: .4s;
 #bomb .sprite {
     width: 10vw;
     height: 10vw;
-
     background-image: url(images/bomb.svg);
     background-size: 100%;
 }
@@ -392,38 +395,25 @@ animation-delay: .6s;
 #bomb1 .sprite {
     width: 10vw;
     height: 10vw;
-
     background-image: url(images/bomb.svg);
     background-size: 100%;
 }
 
-
-.shrink {
-    animation-name: shrink_kf;
-    animation-duration: 15s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes shrink_kf {
-    0% {
-        transform: scaleX(1);
-    }
-
-    50% {}
-
-    100% {
-        transform: scaleX(0);
-    }
-}
-
-/*#pause_button {
+#bomb2 {
     position: absolute;
-    top: 47vw;
-    left: 10vw;
-}*/
+animation-delay: .6s;
+    top: 28vw;
+    left: 62vw;
+    z-index: 10;
+}
 
+#bomb2 .sprite {
+    width: 10vw;
+    height: 10vw;
+
+    background-image: url(images/bomb.svg);
+    background-size: 100%;
+}
 
 .pulse {
     animation-name: pulse;
@@ -655,13 +645,6 @@ animation-delay: .6s;
 
 }
 
-
-
-/* Animation modifiers */
-
-.pause {
-    animation-play-state: paused;
-}
 .position2 {
     left: 20vw;
 }

@@ -1,0 +1,30 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="209.36" height="60.26" viewBox="0 0 209.36 60.26">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        fill: url(#radial-gradient);
+      }
+
+      .cls-2 {
+        font-size: 42.61px;
+        fill: #231f20;
+        font-family: CopperplateGothic-Bold, Copperplate Gothic Bold;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        letter-spacing: 0.01em;
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="178.41" cy="167.27" r="211.93" gradientTransform="translate(20.36 7.48) scale(0.47 0.13)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.36" stop-color="#f15929"/>
+      <stop offset="0.85" stop-color="#ef4136"/>
+    </radialGradient>
+  </defs>
+  <g>
+    <rect class="cls-1" x="2.65" y="2.04" width="204.16" height="55.66" rx="23.77"/>
+    <text class="cls-2" transform="translate(15.29 42.64) scale(0.87 1)">s<tspan class="cls-3" x="26.23" y="0">e</tspan><tspan x="53.82" y="0">ttings</tspan></text>
+  </g>
+</svg>
